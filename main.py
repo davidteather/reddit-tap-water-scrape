@@ -7,7 +7,7 @@ downloadFiles = False
 
 # Method to clean strings
 def formatStr(inp):
-    string = re.sub("[\r\n]+", '\n', inp)
+    string = re.sub("[\r\n]+", '', inp)
     return string.replace("#**Please do not vote on your own submissions.**", "").replace(",", "%2C").strip()
 
 
